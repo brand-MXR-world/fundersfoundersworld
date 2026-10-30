@@ -429,6 +429,19 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   padding-bottom: 24px;
 }
 
+/* Force headline into 1 line and shrink font size */
+.hero h1.display-xl {
+  font-size: clamp(1.5rem, 3.8vw, 2.75rem) !important; /* Smaller fluid font scaling */
+  white-space: nowrap !important;                      /* Prevents wrapping to a second line */
+  max-width: 100% !important;                          /* Removes the 12ch character limit */
+  line-height: 1.1 !important;
+}
+
+/* Maintain inline color accent */
+.hero h1 .line-2 {
+  display: inline !important;
+  color: var(--amber);
+}
 
 
 
