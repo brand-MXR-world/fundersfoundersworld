@@ -376,3 +376,55 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   .rise, .reveal { opacity: 1; transform: none; animation: none; transition: none; }
   .card, .btn, .card-media img { transition: none; }
 }
+
+
+/* ==========================================
+   Hero Top Space Reduction & Position Fix
+   ========================================== */
+
+/* 1. Reset hero alignment to pull content to the top */
+.hero {
+  min-height: auto; 
+  align-content: start;
+}
+
+/* 2. Remove dead space between header and title */
+.hero-inner {
+  padding-top: clamp(20px, 3vw, 40px);
+  padding-bottom: 28px;
+}
+
+/* 3. Adjust headlines & lede spacing */
+.display-xl {
+  font-size: clamp(2.25rem, 5.2vw, 4rem);
+  line-height: 1.05;
+}
+
+.hero .lede {
+  margin-top: 14px;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  max-width: 44ch;
+}
+
+.hero-actions {
+  margin-top: 20px;
+}
+
+/* 4. Shift background Earth downward & right */
+.hero-media img {
+  object-position: 85% 65%;
+  opacity: 0.85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
