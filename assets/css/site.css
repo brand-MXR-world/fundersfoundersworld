@@ -415,6 +415,19 @@ body.nav-open .nav-toggle span::after { top: 0; transform: rotate(-45deg); }
   object-position: 85% 65%;
   opacity: 0.85;
 }
+/* ==========================================
+   Reduce Space Between Ticker Strip & Buildathon Card
+   ========================================== */
+
+/* 1. Reduce padding inside the section wrapper */
+#lake-como.section {
+  padding-top: 24px; /* Default was clamp(64px, 10vw, 128px) */
+}
+
+/* 2. Optional: Bring hero bottom padding inward */
+.hero-inner {
+  padding-bottom: 24px;
+}
 
 
 
